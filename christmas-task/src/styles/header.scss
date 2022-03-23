@@ -1,0 +1,146 @@
+.header__filter-page {
+  background-color: #132d20e3;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: $light-yellow-text;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    .navigation {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+
+      #game-page,
+      #filter-page {
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+  }
+
+  .input__search {
+    cursor: pointer;
+    background-color: #7e866cc7;
+    border: 1px solid $main-bg-color;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    outline: none;
+    font-family: 'Amagro';
+    font-size: 0.8rem;
+    color: $light-yellow-text;
+
+    &::placeholder {
+      color: #ffffec;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease-in-out;
+    filter: sepia(1) brightness(0.8);
+    cursor: pointer;
+
+    &#home {
+      background-image: url(../assets/svg/tree.svg);
+    }
+
+
+
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .menu__btn-mute {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease-in-out;
+    filter: sepia(1) brightness(0.8);
+    cursor: pointer;
+    background-image: url(../assets/svg/audio.svg);
+
+    #menu__btn-mute {
+      display: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .menu__btn-snow {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease-in-out;
+    filter: sepia(1) brightness(0.8);
+    cursor: pointer;
+    background-image: url(../assets/svg/snow.svg);
+
+    #menu__btn-snow {
+      display: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .favorite__ball {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid $light-yellow-text;
+    font-size: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0.3rem;
+      height: 0.2rem;
+      border: 3px solid #f6dac7;
+      top: -10px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+
+}
